@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ResultActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014"
+       />
+
+    <ImageView
+        android:id="@+id/shareBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/grey_oval"
+        android:padding="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/facebookBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:srcCompat="@drawable/ic_share" />
+
+    <ImageView
+        android:id="@+id/facebookBtn"
+       android:onClick="onRadioClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/whatsappBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shareBtn"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:srcCompat="@drawable/ic_facebook" />
+
+    <ImageView
+        android:id="@+id/facebookBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/whatsappBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/saveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/facebookBtn"
+        app:srcCompat="@drawable/ic_baseline_cloud_upload_24" />
+
+    <ImageView
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@id/shareBtn"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@id/shareBtn"
+        app:layout_constraintTop_toBottomOf="@+id/shareBtn"
+        app:srcCompat="@drawable/ic_baseline_save_25" />
+    <ImageView
+        android:id="@+id/whatsappBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/instagrambtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/facebookBtn"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:srcCompat="@drawable/ic_whatsapp" />
+
+    <ImageView
+        android:id="@+id/instagrambtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/whatsappBtn"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:srcCompat="@drawable/ic_instagram" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:layout_constraintVertical_bias="0.9"
+        app:adUnitId="ca-app-pub-5082239756548143/9393293224"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

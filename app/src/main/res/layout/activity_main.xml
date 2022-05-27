@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_black"
+            android:text="Onsanger"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+           />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:text="All-in-One Editor"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linear1"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginHorizontal="60dp"
+    android:layout_marginTop="200dp">
+    <ImageView
+        android:id="@+id/editBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/gradient_red"
+        android:padding="20dp"
+        app:srcCompat="@drawable/ic_magic_wand" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+      android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Edit"
+        android:textColor="@color/black" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="200dp">
+
+            <ImageView
+                android:id="@+id/cameraBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/gradient_blue"
+                android:padding="20dp"
+
+                app:srcCompat="@drawable/ic_camera" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Camera"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:adSize="BANNER"
+
+            app:adUnitId="ca-app-pub-5082239756548143/3873836252"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp" />
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/linear1"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginVertical="140dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Videotoaudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+
+                android:background="@drawable/gradient_red"
+                android:padding="20dp"
+                app:srcCompat="@drawable/ic_videotoaudio" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/roboto_light"
+                android:text="Video To Audio"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/linear2"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="140dp">
+            <ImageView
+                android:id="@+id/trimVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/gradient_red"
+                android:padding="20dp"
+                app:srcCompat="@drawable/ic_trimvideo" />
+            <TextView
+                android:id="@+id/trim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="Trim Video"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear5"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/linear3"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="140dp">
+            <ImageView
+                android:id="@+id/merge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/gradient_red"
+                android:padding="20dp"
+                app:srcCompat="@drawable/ic_merge" />
+            <TextView
+                android:id="@+id/mergevideoandaudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textSize="14sp"
+              android:textStyle="bold"
+                android:fontFamily="@font/roboto_light"
+                android:text="Merge Video and Audio"
+               />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/textView5video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/eturl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="37dp"
+            android:text="set url" />
+    </RelativeLayout>
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/nav_host_fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:navGraph="@navigation/nav_graph" />-->
+
+<!--    &lt;!&ndash; Container for contents of drawer - use NavigationView to make configuration easier &ndash;&gt;-->
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:fitsSystemWindows="true" />-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:id="@+id/navigationView"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

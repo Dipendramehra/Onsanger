@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Onsanger</string>
+    <!--to toggle the open close button
+    of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="main_picture">main picture</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="register">REGISTER</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="new_user">New User?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="reset">reset</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
